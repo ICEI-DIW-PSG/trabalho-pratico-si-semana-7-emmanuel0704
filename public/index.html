@@ -1,13 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+    <title>Fit Web • Treining Hub</title>
+    <meta name="description" content="Blog com vídeo aulas e posts sobre musculação">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700&family=Montserrat:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Olá mundo</h1>
+
+<body class="bg-black text-light" data-bs-theme="dark">
+    <!-- ================= Cabeçalho ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute bg-black bg-opacity-25">
+        <div class="container">
+            <a href="#inicio" class="navbar-brand">
+                <img src="imgs/logo.png" alt="Fit Web - Treining Hub" width="250">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conteudos.html">Conteúdos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= CAPA ================= -->
+
+    <header id="inicio" class="min-vh-100 d-flex align-items-center text-center"
+        style="background: linear-gradient(180deg, rgba(0, 0, 0, .45), rgba(0, 0, 0, .55)), url('imgs/dumbell.png') center/cover no-repeat;">
+        <div class="container">
+            <h1 class="display-2 fw-normal text-uppercase"
+                style="font-family: 'Anton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 0.2em; font-style: italic;">
+                Seja seu melhor</h1>
+
+            <p class="lead text-secondary mx-auto" style="max-width: 860px;">Seu espaço para <strong>aprendizado,
+                    motivação e evolução constante</strong></p>
+
+            <div class="mt-3">
+                <a class="btn btn-warning fw-bold px-4 py-2 rounded-pill" href="#conteudo">Comece agora a sua
+                    jornada</a>
+            </div>
+
+            <a class="d-inline-block mt-3" href="#conteudo" aria-label="Ir para o conteúdo">
+                <img src="imgs/seta-baixo.png" alt="Seta para baixo" width="100" class="opacity-75">
+            </a>
+        </div>
+    </header>
+
+    <!-- ================= CONTEÚDO ================= -->
+
+    <main id="conteudo" class="py-5" style="background: url('imgs/smoky.jpg') center/cover no-repeat;">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <section class="col-md-8" aria-labelledby="ttl-destaques">
+                    <h2 id="ttl-destaques" class="text-warning text-uppercase mb-3" style="letter-spacing: .2em;">Posts
+                        em destaque</h2>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                            <!-- Card 1 -->
+                            <article
+                                class="card h-100 bg-body-tertiary bg-opacity-25 border-warning-subtle border rounded-4">
+                                <div class="ratio ratio-16x9 bg-black bg-opacity-10 rounded-top-4">
+                                    <img src="imgs/display-frame.png" alt="Miniatura do post destaque 1"
+                                        class="w-100 h-100 object-fit-contain" style="object-position: top center;">
+                                </div>
+
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold">Treino de Força - Iniciante</h3>
+                                    <p class="text-secondary mb-2">5 min de leitura • YouTube embutido</p>
+                                    <a href="#" class="stretched-link">Saiba mais</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <article
+                                class="card h-100 bg-body-tertiary bg-opacity-25 border-warning-subtle border rounded-4">
+                                <div class="ratio ratio-16x9 bg-black bg-opacity-10 rounded-top-4">
+                                    <img src="imgs/display-frame.png" alt="Miniatura do post destaque 2"
+                                        class="w-100 h-100 object-fit-contain" style="object-position: top center;">
+                                </div>
+
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold">Mobilidade para agachamento</h3>
+                                    <p class="text-secondary mb-2">4 min de leitura • Série prática</p>
+                                    <a href="#" class="stretched-link">Saiba mais</a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ==== CATEGORIAS ==== -->
+
+                <aside class="col-md-4" aria-labelledby="ttl-categorias">
+                    <h2 id="ttl-categorias" class="text-warning text-uppercase mb-3 text-center"
+                        style="letter-spacing: .2em;">Categorias</h2>
+
+                    <div class="card h-100 bg-body-tertiary bg-opacity-25 border-warning-subtle border rounded-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent text-center py-3"><a
+                                    class="stretched-link link-light text-decoration-none"
+                                    href="conteudos.html?cat=forca">Força</a></li>
+                            <li class="list-group-item bg-transparent text-center py-3"><a
+                                    class="stretched-link link-light text-decoration-none"
+                                    href="conteudos.html?cat=hipertrofia">Hipertrofia</a></li>
+                            <li class="list-group-item bg-transparent text-center py-3"><a
+                                    class="stretched-link link-light text-decoration-none"
+                                    href="conteudos.html?cat=mobilidade">Mobilidade</a></li>
+                            <li class="list-group-item bg-transparent text-center py-3"><a
+                                    class="stretched-link link-light text-decoration-none"
+                                    href="conteudos.html?cat=nutricao">Nutrição</a></li>
+                            <li class="list-group-item bg-transparent text-center py-3"><a
+                                    class="stretched-link link-light text-decoration-none"
+                                    href="conteudos.html?cat=planejamento">Planejamento</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Lista de posts -->
+                <section class="post-list mt-4" aria-labelledby="ttl-lista">
+                    <h3 id="ttl-lista" class="text-warning text-uppercase text-center mb-3">Lista de posts</h3>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+                        <div class="col">
+                            <article class="card h-100 bg-body-tertiary bg-opacity-25 border-0 rounded-4 p-2">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="ratio ratio-1x1" style="width: 64px;">
+                                        <img src="imgs/frame.png" alt="Thumb do post"
+                                            class="rounded-3 object-fit-cover">
+                                    </div>
+                                    <div>
+                                        <strong class="d-block lh-sm">Como progredir cargas</strong>
+                                        <small class="text-secondary d-block lh-sm">Métodos simples para
+                                            evoluir.</small>
+                                        <a href="#" class="d-inline-block mt-1">Saiba mais</a>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 bg-body-tertiary bg-opacity-25 border-0 rounded-4 p-2">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="ratio ratio-1x1" style="width: 64px;">
+                                        <img src="imgs/frame.png" alt="Thumb do post"
+                                            class="rounded-3 object-fit-cover">
+                                    </div>
+                                    <div>
+                                        <strong class="d-block lh-sm">Como progredir cargas</strong>
+                                        <small class="text-secondary d-block lh-sm">Métodos simples para
+                                            evoluir.</small>
+                                        <a href="#" class="d-inline-block mt-1">Saiba mais</a>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 bg-body-tertiary bg-opacity-25 border-0 rounded-4 p-2">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="ratio ratio-1x1" style="width: 64px;">
+                                        <img src="imgs/frame.png" alt="Thumb do post"
+                                            class="rounded-3 object-fit-cover">
+                                    </div>
+                                    <div>
+                                        <strong class="d-block lh-sm">Como progredir cargas</strong>
+                                        <small class="text-secondary d-block lh-sm">Métodos simples para
+                                            evoluir.</small>
+                                        <a href="#" class="d-inline-block mt-1">Saiba mais</a>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 bg-body-tertiary bg-opacity-25 border-0 rounded-4 p-2">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="ratio ratio-1x1" style="width: 64px;">
+                                        <img src="imgs/frame.png" alt="Thumb do post"
+                                            class="rounded-3 object-fit-cover">
+                                    </div>
+                                    <div>
+                                        <strong class="d-block lh-sm">Como progredir cargas</strong>
+                                        <small class="text-secondary d-block lh-sm">Métodos simples para
+                                            evoluir.</small>
+                                        <a href="#" class="d-inline-block mt-1">Saiba mais</a>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <p class="text-center mt-3">
+                        <a href="conteudos.html" class="btn btn-outline-warning rounded-pill px-4">Ver mais
+                            conteúdos</a>
+                    </p>
+                </section>
+
+                <!-- Fale Conosco -->
+
+                <section id="fale-conosco" class="mt-4" aria-labelledby="ttl-contato">
+                    <div class="card bg-body-tertiary bg-opacity-25 border-warning-subtle border rounded-4 p-4 p-md-5">
+                        <h3 id="ttl-contato" class="text-warning text-uppercase text-center mb-4"> Fale conosco </h3>
+
+                        <form action="#" novalidate class="mx-auto" method="POST" style="max-width: 720px;">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="c-nome" class="form-label">Nome</label>
+                                    <input type="text" id="c-nome" name="nome" class="form-control"
+                                        placeholder="Seu nome" autocomplete="name" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="c-telefone" class="form-label">Telefone</label>
+                                    <input type="tel" name="telefone" id="c-telefone" class="form-control"
+                                        placeholder="(31) 98765-4321" autocomplete="tel"
+                                        pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="c-email" class="form-label">E-mail</label>
+                                    <input type="email" id="c-email" name="email" class="form-control"
+                                        placeholder="voce@exemplo.com" autocomplete="email" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea name="mensagem" id="c-msg" rows="4" class="form-control"
+                                        placeholder="Como podemos ajudar?" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button class="btn btn-warning fw-bold px-4 rounded-pill" type="submit"> Enviar
+                                    mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+            <section class="text-center text-secondary mt-5">
+                <figure class="mx-auto" style="max-width: 780px;">
+                    <blockquote class="blockquote mb-1">
+                        "O verdadeiro progresso acontece quando você sai da zona de conforto"
+                    </blockquote>
+                    <figcaption class="text-secondary mb-0">- Dorian Yates</figcaption>
+                </figure>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ================= Rodape ================= -->
+
+    <footer class="border-top bg-black">
+        <div class="container py-3 text-center text-secondary small">
+            <p class="mb-1">© Arthur Emmanuel Oliveira Marinho</p>
+            <address class="mb-0">
+                <a href="mailto:arthur.emmanuel0704@gmail.com" class="link-secondary">arthur.emmanuel0704@gmail.com</a>
+            </address>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
