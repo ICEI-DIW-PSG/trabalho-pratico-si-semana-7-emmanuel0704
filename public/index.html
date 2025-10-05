@@ -35,8 +35,40 @@
 
     <section id="inicio" class="capa" aria-label="Capa do Site">
         <div class="container capa-wrap">
-            <h1>Seja seu melhor</h1>
-            <p>Seu espaço para <strong>aprendizado, motivação e evolução constante</strong></p>
+            <div class="hero-slider" aria-label="Mensagens principais">
+            <input type="radio" name="hs" id="hs-1" checked hidden>
+            <input type="radio" name="hs" id="hs-2" hidden>
+            <input type="radio" name="hs" id="hs-3" hidden>
+
+            <div class="hs-viewport">
+                <div class="hs-track">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <h1>Seja seu melhor</h1>
+                    <p>Seu espaço para <strong>aprendizado, motivação e evolução constante</strong></p>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <h1>Treine com propósito</h1>
+                    <p>Planos práticos, <strong>técnica correta</strong> e evolução sustentável.</p>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <h1>Força + Nutrição</h1>
+                    <p>Conteúdos sobre <strong>cargas, mobilidade e macronutrientes</strong>.</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Bolinhas de navegação -->
+            <div class="hs-dots" role="tablist">
+                <label for="hs-1" aria-label="Mensagem 1"></label>
+                <label for="hs-2" aria-label="Mensagem 2"></label>
+                <label for="hs-3" aria-label="Mensagem 3"></label>
+            </div>
+            </div>
 
             <div class="capa-cta">
                 <a class="btn btn-primario" href="#conteudo">Comece agora a sua jornada</a>
