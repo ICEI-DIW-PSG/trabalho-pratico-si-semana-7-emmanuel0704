@@ -20,25 +20,68 @@ Leia o enunciado completo no Canvas.
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Home-page](image-2.png)
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Página de detalhes](image-3.png)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
 const dados = [
   {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
+    id: 1,
+    titulo: "Treino de Força – Iniciante",
+    resumo: "Primeiros passos e técnica correta.",
+    categoria: "Força",
+    autor: "Equipe Fit Web",
+    data: "2025-03-30",
+    imagem: "imgs/display-frame.png",
+    thumb: "imgs/frame.png",
+    conteudo: `
+      <p>Este guia aborda aquecimento, execução do supino, agachamento e remadas.</p>
+      <p>Foque em técnica antes de carga. Progrida 2,5–5 kg por semana.</p>
+    `
+    },
+    {
+        id: 2,
+        titulo: "Mobilidade para Agachamento",
+        resumo: "Sequência rápida para abrir quadril e tornozelo.",
+        categoria: "Mobilidade",
+        autor: "Equipe Fit Web",
+        data: "2025-03-28",
+        imagem: "imgs/display-frame.png",
+        thumb: "imgs/frame.png",
+        conteudo: `
+      <p>Rotinas de 10 minutos melhoram profundidade e estabilidade do agachamento.</p>
+    `
+  },
+  {
+    id: 3,
+    titulo: "Como progredir cargas",
+    resumo: "Três métodos simples para evoluir sem estagnar.",
+    categoria: "Planejamento",
+    autor: "Equipe Fit Web",
+    data: "2025-03-25",
+    imagem: "imgs/display-frame.png",
+    thumb: "imgs/frame.png",
+    conteudo: `
+      <p>Progressão linear, ondulatória e dupla. Use RPE e limites semanais.</p>
+    `
+  },
+  {
+    id: 4,
+    titulo: "Nutrição para hipertrofia",
+    resumo: "Proteínas, carboidratos e timing ao seu favor.",
+    categoria: "Nutrição",
+    autor: "Equipe Fit Web",
+    data: "2025-03-20",
+    imagem: "imgs/display-frame.png",
+    thumb: "imgs/frame.png",
+    conteudo: `
+      <p>Superávit leve (5–10%), 1.6–2.2 g/kg de proteína e 3–6 g/kg de carbo.</p>
+    `
   }
-]
+];
 ```
